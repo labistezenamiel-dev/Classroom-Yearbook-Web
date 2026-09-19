@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Grade 12 Berzelius Classroom Portal"
+    >
+
+    <title>Grade 12 Berzelius | Classroom Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">B</span>
+
+                <div class="brand-text">
+                    <strong>Berzelius</strong>
+                    <small>Grade 12 Classroom Portal</small>
+                </div>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open navigation menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#months">Months</a>
+                <a href="#upload">Upload</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ==================== HERO ==================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-container">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        GRADE 12 BERZELIUS
+                    </p>
+
+                    <h1>
+                        One class.<br>
+                        <span>Every memory.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A digital space where our classroom moments,
+                        photographs, videos, activities, and memories
+                        can stay together throughout the school year.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#gallery" class="button button-primary">
+                            Explore memories
+                        </a>
+
+                        <a href="#upload" class="button button-secondary">
+                            Add a memory
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card reveal">
+
+                    <div class="hero-card-top">
+                        <span>CLASS ARCHIVE</span>
+                        <span class="status-dot"></span>
+                    </div>
+
+                    <div class="hero-card-number">
+                        12
+                    </div>
+
+                    <div class="hero-card-title">
+                        Berzelius
+                    </div>
+
+                    <div class="hero-card-line"></div>
+
+                    <p>
+                        Memories collected throughout
+                        our Grade 12 journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== INTRO ==================== -->
+
+        <section class="intro section">
+
+            <div class="section-container">
+
+                <div class="intro-heading reveal">
+                    <p class="eyebrow">OUR ARCHIVE</p>
+
+                    <h2>
+                        Moments worth<br>
+                        keeping.
+                    </h2>
+                </div>
+
+                <div class="intro-text reveal">
+
+                    <p>
+                        From ordinary classroom days to the moments
+                        everyone remembers, this portal brings our
+                        class archive into one place.
+                    </p>
+
+                    <p>
+                        Browse by month, open individual memories,
+                        or contribute your own photographs and videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== GALLERY ==================== -->
+
+        <section class="gallery-section section" id="gallery">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="eyebrow">THE COLLECTION</p>
+
+                        <h2>Class memories</h2>
+                    </div>
+
+                    <div class="gallery-controls">
+
+                        <button
+                            class="filter-button active"
+                            type="button"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="photo"
+                        >
+                            Photos
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="video"
+                        >
+                            Videos
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="memory-grid" id="memoryGrid">
+
+                    <!-- Memories are generated by JavaScript -->
+
+                </div>
+
+
+                <div
+                    class="empty-state"
+                    id="emptyState"
+                    hidden
+                >
+                    <h3>No memories yet</h3>
+
+                    <p>
+                        Upload the first photo or video
+                        for this collection.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== MONTHS ==================== -->
+
+        <section class="months-section section" id="months">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="eyebrow">TIMELINE</p>
+
+                        <h2>Browse by month</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="months-grid">
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="August"
+                    >
+                        <span>01</span>
+                        <strong>August</strong>
+                        <small>Start of the journey</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="September"
+                    >
+                        <span>02</span>
+                        <strong>September</strong>
+                        <small>Moments from September</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="October"
+                    >
+                        <span>03</span>
+                        <strong>October</strong>
+                        <small>Moments from October</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="November"
+                    >
+                        <span>04</span>
+                        <strong>November</strong>
+                        <small>Moments from November</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="December"
+                    >
+                        <span>05</span>
+                        <strong>December</strong>
+                        <small>Moments from December</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="January"
+                    >
+                        <span>06</span>
+                        <strong>January</strong>
+                        <small>Moments from January</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="February"
+                    >
+                        <span>07</span>
+                        <strong>February</strong>
+                        <small>Moments from February</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="March"
+                    >
+                        <span>08</span>
+                        <strong>March</strong>
+                        <small>Moments from March</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="April"
+                    >
+                        <span>09</span>
+                        <strong>April</strong>
+                        <small>Moments from April</small>
+                    </button>
+
+                    <button
+                        class="month-card reveal"
+                        type="button"
+                        data-month="May"
+                    >
+                        <span>10</span>
+                        <strong>May</strong>
+                        <small>End of the journey</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== UPLOAD ==================== -->
+
+        <section class="upload-section section" id="upload">
+
+            <div class="section-container">
+
+                <div class="upload-box reveal">
+
+                    <div class="upload-content">
+
+                        <p class="eyebrow">CONTRIBUTE</p>
+
+                        <h2>
+                            Add to the archive.
+                        </h2>
+
+                        <p>
+                            Have a photo or video from our class?
+                            Add it to the collection.
+                        </p>
+
+                    </div>
+
+
+                    <form id="uploadForm" class="upload-form">
+
+                        <div class="form-group">
+
+                            <label for="uploaderName">
+                                Your name
+                            </label>
+
+                            <input
+                                id="uploaderName"
+                                name="uploaderName"
+                                type="text"
+                                placeholder="Enter your name"
+                                maxlength="50"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="memoryMonth">
+                                    Month
+                                </label>
+
+                                <select
+                                    id="memoryMonth"
+                                    name="memoryMonth"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select month
+                                    </option>
+
+                                    <option value="August">
+                                        August
+                                    </option>
+
+                                    <option value="September">
+                                        September
+                                    </option>
+
+                                    <option value="October">
+                                        October
+                                    </option>
+
+                                    <option value="November">
+                                        November
+                                    </option>
+
+                                    <option value="December">
+                                        December
+                                    </option>
+
+                                    <option value="January">
+                                        January
+                                    </option>
+
+                                    <option value="February">
+                                        February
+                                    </option>
+
+                                    <option value="March">
+                                        March
+                                    </option>
+
+                                    <option value="April">
+                                        April
+                                    </option>
+
+                                    <option value="May">
+                                        May
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="memoryTitle">
+                                    Title
+                                </label>
+
+                                <input
+                                    id="memoryTitle"
+                                    name="memoryTitle"
+                                    type="text"
+                                    placeholder="e.g. Science Activity"
+                                    maxlength="70"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="memoryFile">
+                                Photo or video
+                            </label>
+
+                            <input
+                                id="memoryFile"
+                                name="memoryFile"
+                                type="file"
+                                accept="image/*,video/*"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div
+                            class="file-preview"
+                            id="filePreview"
+                            hidden
+                        >
+                        </div>
+
+
+                        <button
+                            class="button button-primary upload-button"
+                            type="submit"
+                        >
+                            Add to archive
+                        </button>
+
+                        <p
+                            class="form-message"
+                            id="formMessage"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="section-container footer-container">
+
+            <div>
+                <strong>Grade 12 Berzelius</strong>
+
+                <p>
+                    Classroom Portal
+                </p>
+            </div>
+
+            <p class="footer-note">
+                Built to preserve the memories.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================== VIEWER MODAL ==================== -->
+
+    <div
+        class="modal"
+        id="mediaModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-backdrop"
+            id="modalBackdrop"
+        ></div>
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div
+                class="modal-media"
+                id="modalMedia"
+            ></div>
+
+            <div class="modal-info">
+
+                <p
+                    class="modal-month"
+                    id="modalMonth"
+                ></p>
+
+                <h3 id="modalTitle">
+                    Memory
+                </h3>
+
+                <p id="modalUploader"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
